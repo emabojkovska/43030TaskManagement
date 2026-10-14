@@ -32,6 +32,7 @@ class TaskPool:
         task4 = Task("Update Login UI", status="ToDo")
         task5 = Task("Update Documentation", status="ToDo")
         task6 = Task("Deploy to Production", status="ToDo")
+        task7 = Task("Write Reflection", status="ToDo")
 
         task1.mark_completed()
         task2.mark_completed()
