@@ -18,8 +18,6 @@ update_pre "unittest" "$UNIT_TEST_RESULTS" "$HTML_FILE"
 
 # Configure Git, then commit and push the change
 git config --global user.email "github-actions@users.noreply.github.com"
-git config --global user.name "github-actions"
-git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git add "$HTML_FILE"
 git commit -m "Update $HTML_FILE with new task and test data"
 git push origin main
